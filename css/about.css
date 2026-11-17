@@ -1,0 +1,55 @@
+/* about.css — page-specific additions for about.html (uses shared tokens) */
+.mission { max-width: 58rem; margin-inline: auto; text-align: center; }
+.mission .pull { margin-top: .25rem; }
+.mission .pull em { font-style: italic; }
+
+.story-facts { margin-top: 1.5rem; }
+.story-facts li { display: flex; gap: .75rem; align-items: flex-start; }
+
+/* Site plan */
+.siteplan { display: grid; gap: clamp(1.5rem, 4vw, 2.5rem); grid-template-columns: minmax(0, 1fr); align-items: start; }
+@media (min-width: 960px) { .siteplan { grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); } }
+.siteplan__figure { margin: 0; padding: clamp(.6rem, 1.5vw, 1rem); background: var(--paper); border: 1px solid var(--line); border-radius: 20px; box-shadow: var(--shadow-sm); }
+.siteplan__figure svg { width: 100%; height: auto; border-radius: 12px; }
+.siteplan__figure figcaption { padding: .75rem .35rem .15rem; font-size: .92rem; color: var(--muted); font-style: italic; }
+.siteplan__key h3 { margin-bottom: 1rem; }
+.siteplan__key .legend { gap: .8rem; }
+.siteplan__key .legend li { font-size: 1rem; line-height: 1.4; }
+.siteplan__key .legend strong { color: var(--pine); display: block; }
+.siteplan__key .legend span.d { color: var(--muted); font-size: .92rem; }
+.siteplan__key .tag-existing { font: 600 .68rem/1 var(--font-body); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: .2rem .5rem; margin-left: .4rem; vertical-align: middle; }
+
+/* SVG fills (tokens) */
+.m-lawn { fill: var(--sage-soft); }
+.m-lawn2 { fill: #D2DECB; }
+.m-road { fill: #D8CFBA; }
+.m-dash { stroke: var(--paper); stroke-width: 3; stroke-dasharray: 14 12; fill: none; }
+.m-pathedge { stroke: #CDBF9E; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.m-pathfill { stroke: var(--paper); fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.m-lot { fill: #E4DBC8; stroke: #CDBF9E; stroke-width: 2; }
+.m-stall { stroke: var(--paper); stroke-width: 3; }
+.m-sand { fill: #EBD9AE; stroke: #D3BC85; stroke-width: 2; }
+.m-soil { fill: #A9805F; }
+.m-soil-d { fill: #8F6A4C; }
+.m-frame { fill: none; stroke: var(--pine); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.m-plant { fill: var(--sage); }
+.m-plant-d { fill: var(--pine); }
+.m-roof { fill: var(--pine); }
+.m-roof2 { fill: var(--pine-lift); }
+.m-canopy { fill: var(--sage); opacity: .75; }
+.m-canopy2 { fill: #7A976F; opacity: .85; }
+.m-shade { fill: rgba(47, 74, 58, .10); stroke: var(--pine); stroke-width: 2; stroke-dasharray: 7 6; }
+.m-table { fill: #C9A272; }
+.m-strip { fill: #C5D7BB; stroke: var(--sage); stroke-width: 2; }
+.m-f1 { fill: var(--sunflower); }
+.m-f2 { fill: var(--clay); }
+.m-f3 { fill: #fff; }
+.m-bin { fill: #B9774F; stroke: #8F4527; stroke-width: 2; }
+.m-bin2 { fill: #8F6A4C; stroke: #6E4F37; stroke-width: 2; }
+.m-ada { fill: #B9936F; stroke: var(--pine); stroke-width: 3; }
+.m-pin circle { fill: var(--clay-btn); stroke: #fff; stroke-width: 3; }
+.m-pin text { fill: #fff; font: 700 19px var(--font-body); text-anchor: middle; dominant-baseline: central; }
+.m-label { font: 600 15px var(--font-body); fill: var(--pine); letter-spacing: .08em; text-transform: uppercase; }
+.m-label--light { fill: var(--muted); }
+
+.values-grid .card__title { margin-top: .75rem; }

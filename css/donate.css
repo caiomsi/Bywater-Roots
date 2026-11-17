@@ -1,0 +1,7 @@
+/* Donate page extras. Uses shared tokens from style.css. */
+.do-budget { margin-top: 3.5rem; max-width: 46rem; margin-inline: auto; display: grid; gap: 1rem; }
+.do-budget h3 { font-size: 1.5rem; }
+.do-form-wrap { display: grid; gap: 2rem; margin-top: 2.5rem; align-items: start; grid-template-columns: minmax(0, 1fr); }
+.do-form-wrap > * { min-width: 0; }
+@media (min-width: 900px) { .do-form-wrap { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 2.5rem; } }
+.do-amounts { grid-template-columns: repeat(auto-fit, minmax(min(100%, 7rem), 1fr)); }

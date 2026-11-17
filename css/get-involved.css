@@ -1,0 +1,16 @@
+/* Get Involved page extras. Uses shared tokens from style.css. */
+#rent, #volunteer, #partner { scroll-margin-top: calc(var(--header-h) + 1rem); }
+
+.gi-prices { margin-top: .75rem; padding-top: .85rem; }
+.gi-prices .price-card { height: 100%; }
+.gi-scholarship { margin-top: 2rem; }
+
+.gi-form-wrap { display: grid; gap: 2rem; margin-top: 2.5rem; align-items: start; grid-template-columns: minmax(0, 1fr); }
+.gi-form-wrap > * { min-width: 0; }
+@media (min-width: 900px) {
+  .gi-form-wrap { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 2.5rem; }
+  .gi-form-wrap--reverse { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); }
+  .gi-form-wrap--single { grid-template-columns: minmax(0, 1fr); }
+}
+#volunteer .gi-form-wrap { margin-top: 0; }
+.confirm-panel { margin-top: 0; }
