@@ -2,7 +2,7 @@
 
 Student concept site (DES 2630) for a community garden that does not exist: Bywater Park,
 Cottonwood Heights UT. Static HTML/CSS/vanilla JS. `SPEC.md` is the content/design contract.
-Hosting plan: GitHub Pages, `caiomsi.github.io/Bywater-Roots` (not pushed yet).
+Hosting: GitHub Pages, live at `caiomsi.github.io/Bywater-Roots` (repo caiomsi/Bywater-Roots, master). 404.html uses `/Bywater-Roots/`-prefixed paths on purpose.
 
 ## File ownership
 - `css/style.css` and `js/main.js` are SHARED and the component library lives in the index comment at the top of style.css. Page-specific extras go in `css/<page>.css`.
