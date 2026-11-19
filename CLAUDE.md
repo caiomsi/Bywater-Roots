@@ -18,3 +18,7 @@ pine #2F4A3A, pine-deep #233A2D, sage #8FA98B, sage-soft #DCE5D7, clay #C46A4A (
 - Photo placeholders: `.photo-ph` with `data-photo`; swap per README. Log each new placeholder in README table.
 - Required footer disclaimer on every page: "Student concept project — not affiliated with Cottonwood Heights City or CHPRSA."
 - Every page: robots noindex, one h1, no JSON-LD, no real names/businesses, no card inputs.
+
+## SEO / share (refined 2026-11-19)
+- Every page: canonical + og:url (absolute `https://caiomsi.github.io/Bywater-Roots/...`, none on 404), OG/Twitter tags, share image `images/og-image.png` (1200×630), favicon.ico/svg, apple-touch-icon, `site.webmanifest` + icon-192/512.
+- Deliberately NOT added: sitemap.xml, robots.txt, llms.txt, JSON-LD, breadcrumbs. The site is noindex (concept project naming a real city park), and files at `/Bywater-Roots/` aren't at the domain root, where robots.txt and llms.txt must live. If it's ever made indexable, add a sitemap and an Organization schema, never LocalBusiness: the garden doesn't exist.
